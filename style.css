@@ -25,39 +25,41 @@ ul{
 }
 body{
   height: 100vh;
-}
-section{
   background-color: var(--Pale-blue);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  
+}
+section{
+  width: 500px;
+  height: 350px;
+  background-color: var(--White);
+  display: flex;
+  border-radius: 15px;
 }
 .results-side{
   width: 250px;
   max-width: 100%;
   height: 350px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 15px;
-  background-image: linear-gradient(to top,var(--Light-royal-blue) ,var(--Light-slate-blue));
+  background-image: linear-gradient(to top,var(--Light-royal-blue)50% ,var(--Light-slate-blue));
 }
-.summary-side{
-  width: 250px;
-  max-width: 100%;
-  height: 350px;
-  background-color: var(--White);
-}
+
 .results-side>h2{
   color: var(--Light-lavender);
   padding: 25px;
-  font-size: 16px;
+  font-size: 18px;
 }
 p{
   color: var(--Light-lavender);
+  box-sizing: border-box;
   padding: 15px;
   font-size: 15px;
 }
@@ -77,7 +79,7 @@ h1{
   align-items: center;
 }
 .score ul :first-child{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--White);
 }
@@ -85,14 +87,120 @@ h1{
   font-size: 10px;
   color: var(--Light-lavender);
 }
-
-
-
-
-
-
-
-
+.summary-side{
+  width: 250px;
+  max-width: 100%;
+  height: 350px;
+  background-color: var(--White);
+  border-radius: 0 15px 15px 0;
+  padding: 15px 20px ;
+}
+.summary-side h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+.Reaction :last-child :last-child{
+  color: hsl(223, 15%, 73%);
+  font-weight: bold;
+}
+.Memory :last-child :last-child{
+  color: hsl(223, 15%, 73%);
+  font-weight: bold;
+}
+.Verbal :last-child :last-child{
+  color: hsl(223, 15%, 73%);
+  font-weight: bold;
+}
+.Visual :last-child :last-child{
+  color: hsl(223, 15%, 73%);
+  font-weight: bold;
+}
+.Reaction :last-child :first-child{
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+.Memory :last-child :first-child{
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+.Verbal :last-child :first-child{
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+.Visual :last-child :first-child{
+  color: var(--Dark-gray-blue);
+  font-weight: bold;
+}
+.Reaction :first-child :last-child{
+  color: var(--Light-red);
+}
+.Memory :first-child :last-child{
+  color: var(--Orangey-yellow);
+}
+.Verbal :first-child :last-child{
+  color: var(--Green-teal);
+}
+.Visual :first-child :last-child{
+  color: var(--Cobalt-blue);
+}
+.Reaction :first-child,.Reaction :last-child{
+  display: flex;
+  gap: 5px;
+}
+.Memory :first-child,.Memory :last-child{
+  display: flex;
+  gap: 5px;
+}
+.Verbal :first-child,.Verbal :last-child{
+  display: flex;
+  gap: 5px;
+}
+.Visual :first-child,.Visual :last-child{
+  display: flex;
+  gap: 5px;
+}
+.Reaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color:hsl(0, 57%, 97%);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.Memory{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(39, 57%, 97%);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.Verbal{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(166, 57%, 97%);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.Visual{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(234, 57%, 97%);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+button{
+  width: 100%;
+  color: white;
+  background-color: var(--Dark-gray-blue);
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 15px;
+}
 
 
 
