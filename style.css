@@ -201,9 +201,25 @@ button{
   border-radius: 20px;
   font-size: 15px;
 }
-
-
-
+button:hover{
+  background-image: linear-gradient(to top,var(--Light-royal-blue)50% ,var(--Light-slate-blue));
+  cursor: pointer;
+}
+@media (max-width:500px){
+  section{
+    flex-direction: column;
+    height: 667px; ;
+    width: 375px;
+  }
+  .results-side{
+    width: 375px;
+    height: calc(8%(667px));
+  }
+  .summary-side{
+    width: 375px;
+    height: calc(12%(667px));
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
